@@ -1,0 +1,322 @@
+{
+  "@@locale": "de",
+  
+  "appTitle": "Revier App",
+  
+  "welcomeMessage": "Willkommen bei Revier App",
+  
+  "signIn": "Anmelden",
+  
+  "signUp": "Registrieren",
+  
+  "email": "E-Mail",
+  
+  "password": "Passwort",
+  
+  "forgotPassword": "Passwort vergessen?",
+  
+  "resetPassword": "Passwort zurücksetzen",
+  
+  "orContinueWith": "Oder fortfahren mit",
+  
+  "dontHaveAccount": "Noch kein Konto?",
+  
+  "alreadyHaveAccount": "Bereits ein Konto?",
+  
+  "signInWithGoogle": "Mit Google anmelden",
+  
+  "resetLinkSent": "Ein Link zum Zurücksetzen des Passworts wurde an Ihre E-Mail gesendet",
+  
+  "resetPasswordTitle": "Passwort zurücksetzen",
+  
+  "resetPasswordInstructions": "Geben Sie Ihre E-Mail-Adresse ein, um einen Link zum Zurücksetzen des Passworts zu erhalten",
+  
+  "send": "Senden",
+  
+  "cancel": "Abbrechen",
+  
+  "profileTitle": "Mein Profil",
+  
+  "profileEmail": "E-Mail",
+  
+  "changePassword": "Passwort ändern",
+  
+  "signOut": "Abmelden",
+  
+  "changePasswordTitle": "Passwort ändern",
+  
+  "currentPassword": "Aktuelles Passwort",
+  
+  "newPassword": "Neues Passwort",
+  
+  "confirmPassword": "Passwort bestätigen",
+  
+  "save": "Speichern",
+  
+  "uploadsTitle": "Uploads",
+  
+  "camera": "Kamera",
+  
+  "date": "Datum",
+  
+  "status": "Status",
+  
+  "forceSync": "Sync erzwingen",
+  
+  "forceSyncSuccess": "Daten erfolgreich mit Supabase synchronisiert",
+  
+  "noUploads": "Keine Uploads gefunden",
+
+  "invalidCredentials": "Ungültige E-Mail oder Passwort",
+  
+  "emailAlreadyInUse": "E-Mail wird bereits verwendet",
+  
+  "weakPassword": "Passwort ist zu schwach",
+  
+  "internalServerError": "Serverfehler, bitte versuchen Sie es später erneut",
+  
+  "networkError": "Netzwerkfehler, bitte überprüfen Sie Ihre Verbindung",
+  
+  "authRequired": "Authentifizierung erforderlich",
+  
+  "unknownError": "Unbekannter Fehler aufgetreten",
+  
+  "passwordMismatch": "Passwörter stimmen nicht überein",
+  
+  "foreignKeyConstraint": "Bitte synchronisieren Sie zuerst die Kameras, bevor Sie Uploads synchronisieren",
+
+  "emailHint": "Geben Sie Ihre E-Mail ein",
+  
+  "emailRequired": "Bitte geben Sie Ihre E-Mail ein",
+  
+  "emailInvalid": "Bitte geben Sie eine gültige E-Mail ein",
+  
+  "passwordHint": "Geben Sie Ihr Passwort ein",
+  
+  "passwordRequired": "Bitte geben Sie Ihr Passwort ein",
+  
+  "passwordTooShort": "Passwort muss mindestens 6 Zeichen lang sein",
+  
+  "confirmPasswordHint": "Bestätigen Sie Ihr Passwort",
+  
+  "confirmPasswordRequired": "Bitte bestätigen Sie Ihr Passwort",
+  
+  "checkEmail": "Überprüfen Sie Ihre E-Mail",
+  
+  "backToLogin": "Zurück zur Anmeldung",
+  
+  "resetPasswordButton": "Link zum Zurücksetzen senden",
+  
+  "registrationSuccessful": "Registrierung erfolgreich!",
+  
+  "errorLoadingUploads": "Fehler beim Laden der Uploads:",
+  
+  "changeLanguage": "Sprache ändern",
+
+  "changeTheme": "Darstellung ändern",
+
+  "settingsTitle": "Einstellungen",
+  
+  "sightingsTitle": "Sichtungen",
+
+  "mediaTitle": "Medien",
+
+  "huntingGroundTitle": "Mein Revier",
+
+  "animalFilterTitle": "Filter",
+
+  "systemTheme": "System Darstellung",
+
+  "lightTheme": "Helle Darstellung",
+
+  "darkTheme": "Dunkle Darstellung",
+
+  "logout": "Ausloggen",
+
+  "filter": "Filter",
+
+  "animal": "Tiere",
+
+  "sightings": "Sichtungen",
+
+  "media": "Medien",
+
+  "selectOption": "Wählen Sie eine Option",
+
+  "edit": "Bearbeiten",
+
+  "delete": "Löschen",
+
+  "add": "Hinzufügen",
+  
+  "noOptionsAvailable": "Keine Optionen verfügbar",
+  
+  "view": "Anzeigen",
+
+  "latitude": "Breitengrad",
+
+  "longitude": "Längengrad",
+
+  "discardChanges": "Änderungen verwerfen?",
+
+  "discard": "Verwerfen",
+
+  "isRequired": "wird benötigt",
+
+  "wordNew": "Neuer",
+
+  "plsEnterValNum": "Bitte geben Sie einen gültigen Wert ein.",
+
+  "selectDate": "Datum wählen",
+
+  "noResultFor": "Kein Ergebnis für: ",
+
+  "errorLoadData": "Daten konnten nicht geladen werden: ",
+
+  "createHuntingGround": "Revier erstellen",
+
+  "selectHuntingGround": "Revier auswählen",
+
+  "failLoadHuntingGround": "Revier konnte nicht geladen werden",
+
+  "failSelectHuntingGround": "Revier konnte nicht geladen werden: ",
+
+  "retry": "Wiederholen",
+
+  "noHGFound": "Kein Revier gefunden.\nTap + um eines zu erstellen",
+
+  "noHGSelected": "Kein Revier ausgewählt",
+
+  "selectHGFirst": "Bitte wählen Sie zuerst ein Revier",
+
+  "uploads": "Uploads",
+
+  "syncWithServer": "Synchronisieren mit server",
+
+  "createTestUpload": "Erstelle Testupload",
+
+  "manuallyCheckUploads": "Prüfe Upload manuell",
+
+  "syncDatabase": "Datenbank synchronisieren",
+
+  "stillLoading": "Laden... \nTap um einen Testupload zu erstellen",
+
+  "checkUploads": "Uploads prüfen",
+
+  "uploadError": "Uploads - Error",
+
+  "unsavedDiscardWarning": "Sie haben ihre Änderungen nicht gespeichert. Trotzdem verwerfen?",
+
+  "species": "Spezies",
+
+  "unknown": "Unbekannt",
+
+  "age": "Alter",
+
+  "years": "Jahre",
+
+  "weight": "Gewicht",
+
+  "notes": "Notizen: ",
+
+  "noEmail": "Keine E-Mail",
+
+  "userID": "Nutzer ID",
+
+  "accountCreated": "Account erstellt",
+
+  "accountOptions": "Account Optionen",
+
+  "plsEnterNewPW": "Bitte geben Sie ein neues Passwort ein",
+
+  "pwLengthTip": "Das Passwort muss mindestens 6 Zeichen enthalten",
+  
+  "plsConfirmPW": "Bitte bestätigen Sie das Passwort",
+
+  "pwUpdateSuccess": "Passwort erfolgreich geupdatet",
+
+  "newSighting": "Neue Sichtung",
+  
+  "editSighting": "Sichtung bearbeiten",
+
+  "createNewHG": "Neues Revier erstellen",
+
+  "refreshHG": "Revier neu laden",
+
+  "errorLoadingHG": "Fehler beim Laden des Reviers",
+
+  "errorSelectHG": "Fehler bei der Auswahl des Reviers",
+
+  "errorBuildUploadScreen": "Fehler beim Laden des Uploadbildschirm: ",
+
+  "goBack": "Gehe zurück",
+
+  "noUploadsYet": "Noch keine uploads vorhanden",
+
+  "errorLoadingUploads": "Fehler beim Laden der Uploads: ",
+
+  "syncToDB": "Synchronisieren mit Datenbank",
+
+  "plsWaitSync": "Bitte warten während die Daten synchronisiert werden...",
+
+  "createNewUpload": "Erstelle neuen Upload",
+
+  "create": "Erstelle",
+
+  "location": "Ort",
+
+  "useCurrentLocation": "Nutze momentane Position",
+
+  "cameraID": "Kamera ID",
+
+  "enterCameraID": "Bitte Kamera ID eingeben",
+  
+  "tapToSelectColor": "Tippen um Farbe auszuwählen",
+  
+  "selectSpecies": "Spezies auswählen",
+  
+  "selectShootingRecord": "Abschussprotokoll auswählen",
+  
+  "nameRequired": "Name ist erforderlich",
+  
+  "speciesRequired": "Spezies ist erforderlich",
+  
+  "huntingGroundRequired": "Revier ist erforderlich",
+  
+  "ageCannotBeNegative": "Alter kann nicht negativ sein",
+  
+  "weightMustBePositive": "Gewicht muss größer als null sein",
+  
+  "validationError": "Validierungsfehler aufgetreten",
+  
+  "modelRegistryNotAvailable": "Modellregister nicht verfügbar",
+  
+  "sortBy": "Sortieren nach",
+  
+  "sortAscending": "Aufsteigend sortieren",
+  
+  "sortDescending": "Absteigend sortieren",
+  
+  "noSortOptionsAvailable": "Keine Sortieroptionen verfügbar",
+  
+  "sortOptions": "Sortieroptionen",
+  
+  "listView": "Liste",
+  
+  "gridView": "Raster",
+  
+  "shotOnDate": "Geschossen am {date}",
+  "@shotOnDate": {
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "2023-01-01"
+      }
+    }
+  },
+
+  "search": "Suchen",
+  "@search": {
+    "description": "Label for search field"
+  }
+}

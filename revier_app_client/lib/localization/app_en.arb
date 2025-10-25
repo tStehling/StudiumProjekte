@@ -1,0 +1,331 @@
+{
+  "@@locale": "en",
+  
+  "appTitle": "Revier App",
+    
+  "welcomeMessage": "Welcome to Revier App",
+  
+  "signIn": "Sign in",
+    
+  "signUp": "Sign up",
+    
+  "email": "Email",
+    
+  "password": "Password",
+    
+  "forgotPassword": "Forgot password?",
+    
+  "resetPassword": "Reset password",
+    
+  "orContinueWith": "Or continue with",
+    
+  "dontHaveAccount": "Don't have an account?",
+    
+  "alreadyHaveAccount": "Already have an account?",
+  
+  "signInWithGoogle": "Sign in with Google",
+    
+  "resetLinkSent": "Password reset link has been sent to your email",
+    
+  "resetPasswordTitle": "Reset Password",
+    
+  "resetPasswordInstructions": "Enter your email to receive a password reset link",
+    
+  "send": "Send",
+    
+  "cancel": "Cancel",
+    
+  "profileTitle": "My Profile",
+    
+  "profileEmail": "Email",
+    
+  "changePassword": "Change Password",
+    
+  "signOut": "Sign Out",
+    
+  "changePasswordTitle": "Change Password",
+    
+  "currentPassword": "Current Password",
+    
+  "newPassword": "New Password",
+    
+  "confirmPassword": "Confirm Password",
+    
+  "save": "Save",
+    
+  "uploadsTitle": "Uploads",
+    
+  "camera": "Camera",
+   
+  "date": "Date",
+    
+  "status": "Status",
+    
+  "forceSync": "Force Sync",
+    
+  "forceSyncSuccess": "Data successfully synced to Supabase",
+    
+  "noUploads": "No uploads found",
+
+  "invalidCredentials": "Invalid email or password",
+    
+  "emailAlreadyInUse": "Email is already in use",
+    
+  "weakPassword": "Password is too weak",
+    
+  "internalServerError": "Server error, please try again later",
+    
+  "networkError": "Network error, please check your connection",
+    
+  "authRequired": "Authentication required",
+    
+  "unknownError": "Unknown error occurred",
+    
+  "passwordMismatch": "Passwords do not match",
+    
+  "foreignKeyConstraint": "Please sync cameras first before syncing uploads",
+  
+  "emailHint": "Enter your email",
+  
+  "emailRequired": "Please enter your email",
+  
+  "emailInvalid": "Please enter a valid email",
+  
+  "passwordHint": "Enter your password",
+  
+  "passwordRequired": "Please enter your password",
+  
+  "passwordTooShort": "Password must be at least 6 characters",
+  
+  "confirmPasswordHint": "Confirm your password",
+  
+  "confirmPasswordRequired": "Please confirm your password",
+  
+  "checkEmail": "Check Your Email",
+  
+  "backToLogin": "Back to Login",
+  
+  "resetPasswordButton": "Send Reset Link",
+
+  "registrationSuccessful": "Registration successful!",
+  
+  "errorLoadingUploads": "Error loading uploads: ",
+  
+  "changeLanguage": "Change language",
+  
+  "changeTheme": "Change theme",
+  
+  "settingsTitle": "Settings",
+  
+  "sightingsTitle": "Sightings",
+  
+  "mediaTitle": "Media",
+  
+  "animalFilterTitle": "Filter",
+
+  "huntingGroundTitle": "Hunting area",
+  
+  "systemTheme": "System theme",
+  "@systemTheme": {
+    "description": "Choose system theme"
+  },
+
+  "lightTheme": "Light Theme",
+  "@lightTheme": {
+    "description": "Choose light theme"
+  },
+
+  "darkTheme": "Dark theme",
+  "@darkTheme": {
+    "description": "Choose dark theme"
+  },
+
+  "logout": "Logout",
+  
+  "filter": "Filter",
+  
+  "animal": "Animals",
+
+  "sightings": "Sightings",
+  
+  "media": "Media",
+  
+  "selectOption": "Please select an option",
+  
+  "edit": "Edit",
+  
+  "delete": "Delete",
+  
+  "add": "Add",
+  
+  "noOptionsAvailable": "No options available",
+  
+  "view": "View",
+  
+  "latitude": "Latitude",
+  
+  "longitude": "Longitude",
+  
+  "discardChanges": "Discard changes?",
+  
+  "discard": "Discard",
+  
+  "isRequired": "is required",
+  
+  "wordNew": "New",
+  
+  "plsEnterValNum": "Please enter a valid number.",
+  
+  "selectDate": "Select date",
+
+  "noResultFor": "No result for: ",
+
+  "errorLoadData": "Error loading data: ",
+  
+  "createHuntingGround": "Create hunting ground",
+
+  "selectHuntingGround": "Select hunting ground",
+
+  "failLoadHuntingGround": "Failed loading hunting grounds",
+
+  "failSelectHuntingGround": "Failed to select hunting ground: ",
+
+  "retry": "Retry",
+
+  "noHGFound": "No hunting grounds found.\nTap + to create one",
+
+  "noHGSelected": "No Hunting Ground Selected",
+
+  "selectHGFirst": "Please select a hunting ground first",
+
+  "uploads": "Uploads",
+
+  "syncWithServer": "Sync with server",
+
+  "createTestUpload": "Create test upload",
+
+  "manuallyCheckUploads": "Manually check uploads",
+
+  "syncDatabase": "Synchronize database",
+
+  "stillLoading": "Still loading...\nTap to create a test upload",
+
+  "checkUploads": "Check uploads",
+
+  "uploadError": "Uploads - Error",
+
+  "unsavedDiscardWarning": "You have unsaved changes. Are you sure you want to discard them?",
+
+  "species": "Species",
+
+  "unknown": "Unknown",
+
+  "age": "Age",
+
+  "years": "years",
+
+  "weight": "weight",
+
+  "notes": "Notes: ",
+
+  "noEmail": "No E-Mail",
+
+  "userID": "User ID",
+
+  "accountCreated": "Account created",
+
+  "accountOptions": "Account options",
+
+  "plsEnterNewPW": "Please enter a new password",
+
+  "pwLengthTip": "Password must be at least 6 characters",
+
+  "plsConfirmPW": "Please confirm your password",
+
+  "pwUpdateSuccess": "Password updated successfully",
+
+ "newSighting": "New sighting",
+
+ "editSighting": "Edit sighting",
+
+ "createNewHG": "Create new hunting ground",
+
+ "refreshHG": "Refresh Hunting Grounds",
+
+ "errorLoadingHG": "Failed to load hunting grounds",
+
+ "errorSelectHG": "Failed to select hunting ground",
+
+ "errorBuildUploadScreen": "Error building UploadsScreen: ",
+
+ "goBack": "Go back",
+
+ "noUploadsYet": "No uploads yet",
+
+ "errorLoadingUploads": "Error loading uploads: ",
+
+ "syncToDB": "Syncing to Datenbank",
+
+ "plsWaitSync": "Please wait while syncing data...",
+
+ "createNewUpload": "Create New Upload",
+
+ "create": "Create",
+
+ "location": "Location",
+
+ "useCurrentLocation": "Use current location",
+
+ "cameraID": "Camera ID",
+
+ "enterCameraID": "Please enter camera ID",
+
+ "tapToSelectColor": "Tap to select color",
+
+ "selectSpecies": "Select species",
+
+ "selectShootingRecord": "Select shooting record",
+
+ "nameRequired": "Name is required",
+
+ "speciesRequired": "Species is required",
+
+ "huntingGroundRequired": "Hunting Ground is required",
+
+ "ageCannotBeNegative": "Age cannot be negative",
+
+ "weightMustBePositive": "Weight must be greater than zero",
+
+ "validationError": "Validation error occurred",
+
+ "modelRegistryNotAvailable": "Model Registry not available",
+
+ "sortBy": "Sort By",
+
+ "sortAscending": "Sort Ascending",
+
+ "sortDescending": "Sort Descending",
+
+ "noSortOptionsAvailable": "No sort options available",
+
+ "sortOptions": "Sort options",
+
+ "listView": "List View",
+
+ "gridView": "Grid View",
+
+ "shotOnDate": "Shot on {date}",
+ "@shotOnDate": {
+   "placeholders": {
+     "date": {
+       "type": "String",
+       "example": "2023-01-01"
+     }
+   }
+ },
+
+ "search": "Search",
+ "@search": {
+   "description": "Label for search field"
+ }
+}

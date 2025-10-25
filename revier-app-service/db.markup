@@ -1,0 +1,215 @@
+
+weather_conditions {
+	id uuid pk
+	wind_direction integer(9) null
+	wind_speed decimal null
+	temperature decimal null
+	air_pressure decimal null
+	precipitation decimal null
+	ground_conditions varchar(255) null
+	moon_phase varchar(50) null
+	timestamp timestamp def(current_timestamp)
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp null
+}
+
+federal_states {
+	id uuid pk
+	name varchar(100)
+	country_id integer > countries.id
+}
+
+hunting_grounds {
+	id uuid pk
+	name varchar(255)
+	federal_state_id uuid > federal_states.id
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp null
+}
+
+species {
+	id uuid pk
+	name varchar(100)
+	is_pest boolean def(false)
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+}
+
+hunting_seasons {
+	id uuid pk unique
+	federal_state_id uuid > federal_states.id
+	species_id uuid > species.id
+	animal_age_min integer null
+	start_date date
+	end_date date
+	valid_from timestamp def(current_timestamp)
+	valid_until timestamp null
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+}
+
+animal_filter {
+	id uuid pk
+	name varchar(255)
+	hunting_ground_id uuid > hunting_grounds.id
+	created_at timestamp def(current_timestamp)
+	species_id uuid > species.id
+	animal_ids uuid >* animals.id
+	animal_count integer def(1)
+	animal_count_type varchar(50)
+	tags_ids uuid >* tags.id
+}
+
+animals {
+	id uuid pk
+	hunting_ground_id uuid > hunting_grounds.id
+	name varchar(255)
+	dead boolean
+	age decimal
+	weight decimal
+	abnormalities text
+	shooting_priority integer
+	notes text
+	created_at timestamp def(current_timestamp)
+	shooting_id uuid null > shooting.id
+	species_id uuid > species.id
+	tags_ids uuid >* tags.id
+	custom_color integer
+}
+
+shooting {
+	id uuid pk
+	shot_by_id uuid null > user.id
+	weapon_id uuid null > weapons.id
+	caliber_id uuid null > calibers.id
+	media_ids uuid null > media.id
+	distance decimal null
+	hit_location varchar(255) null
+	shot_count integer null def(1)
+	notes text null
+	shot_at timestamp def(current_timestamp)
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp null
+}
+
+media {
+	id uuid pk
+	offline_file_path varchar(1000) null
+	online_file_path varchar(1000) null
+	media_type varchar(50)
+	time_offset integer def(0)
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp null
+}
+
+sightings {
+	id uuid pk
+	species_id uuid > species.id
+	group_type varchar(255) null
+	animal_count integer
+	animal_count_precision integer def(0)
+	animal_ids uuid null >* animals.id
+	tags_ids uuid null >* tags.id
+	media_ids uuid null >* media.id
+	weather_condition_id uuid null > weather_conditions.id
+	camera_id uuid null > camera.id
+	upload_id uuid null > upload.id
+	latitude decimal
+	longitude decimal
+	sighting_start timestamp
+	sighting_end timestamp
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp null
+}
+
+tags {
+	id uuid pk
+	name varchar(100)
+	color varchar(255) null
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp null
+}
+
+weapons {
+	id uuid pk
+	name varchar(255)
+	user_id uuid > user.id
+	default_caliber_id uuid null > calibers.id
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp unique
+}
+
+calibers {
+	id uuid pk
+	name varchar(50)
+	created_by_id uuid null > user.id
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp null
+}
+
+user {
+	id uuid pk increments unique
+	email varchar(50) unique
+	password_hash varchar(50)
+	first_name varchar(50)
+	last_name varchar(50)
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp null
+}
+
+hunting_grounds_members {
+	id uuid pk
+	user_id uuid > user.id
+	hunting_ground_id uuid > hunting_grounds.id
+	role varchar(50)
+}
+
+allowed_calibers {
+	id uuid pk
+	federal_state uuid > federal_states.id
+	caliber_id uuid(100) >* calibers.id
+	species_id uuid > species.id
+	valid_from timestamp def(current_timestamp)
+	valid_until timestamp null
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+}
+
+camera {
+	id uuid pk
+	name varchar(255)
+	latitude decimal
+	longitude decimal
+	created_at timestamp def(current_timestamp)
+	updated_at timestamp def(current_timestamp)
+	deleted_at timestamp null
+}
+
+upload {
+	id uuid pk increments unique
+	status varchar(50)
+	media_ids uuid >* media.id
+	thumbnail_id uuid > media.id
+	unprocessed_media_ids uuid null >* media.id
+	camera_id uuid null > camera.id
+	latitude decimal null
+	longitude decimal null
+	created_at timestamp def(current_time)
+	updated_at timestamp def(current_time)
+	deleted_at timestamp null
+}
+
+countries {
+	id uuid pk
+	name varchar(100)
+}
+

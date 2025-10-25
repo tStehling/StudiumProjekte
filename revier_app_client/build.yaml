@@ -1,0 +1,30 @@
+targets:
+  $default:
+    builders:
+      chopper_generator:
+        options:
+          header: "//Generated code"
+      swagger_dart_code_generator:
+        enabled: true
+        options:
+          input_folder: 'lib/api/swagger/'
+          output_folder: 'lib/api/generated/' # Replace with your Supabase OpenAPI URL or local file path
+          enums_case_sensitive: true
+          use_path_for_request_names: true
+          use_default_null_for_nullable_parameters: true
+          use_required_attribute_for_headers: true
+          include_if_null: false
+          build_only_models: false
+          separate_models: true
+          use_freezed: true  # Use Freezed for models
+          use_full_import_path: true
+          ignore_headers: false
+          response_override_value_map: []
+      # Configure Brick builders
+      brick_offline_first_with_supabase_build:
+        enabled: true
+        options:
+          # You can add any specific options for Brick here
+          # For example:
+          # generate_for:
+          #   - lib/brick/models/**.dart
